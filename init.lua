@@ -2,6 +2,7 @@ require("config.lazy")
 
 local plugins = {
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{ "simonmclean/triptych.nvim" },
 	{ "nvim-lua/plenary.nvim" },
 	{ "stevearc/dressing.nvim" },
 	{
@@ -28,9 +29,12 @@ local plugins = {
 -- require("flutter-tools").setup({}) -- use defaults
 
 require("plenary")
-require("dressing")
-require("flutter-tools").setup {}
+-- require("dressing")
+require("flutter-tools").setup({})
 -- require("flutter-tools").setup({ dir = "C:/Users/deann/AppData/local/nvim/lua/plugins" })
+
+-- require("plugins/triptych").setup({})
+-- for tiling windows, will get around to this eventually
 
 --require catppuccin
 require("catppuccin").setup()
